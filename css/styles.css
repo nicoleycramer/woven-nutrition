@@ -485,8 +485,8 @@ section { padding: var(--section-padding); }
   margin-top: 1.25rem;
 }
 
-.expect-section { background-color: var(--cream); }
-.expect-steps { display: flex; flex-direction: column; gap: 24px; margin-top: 40px; max-width: 680px; }
+.expect-section { background-color: var(--cream); padding: var(--section-padding); }
+.expect-steps { display: flex; flex-direction: column; gap: 24px; margin-top: 40px; }
 .expect-step { display: flex; gap: 20px; align-items: flex-start; }
 .step-num {
   flex-shrink: 0;

@@ -35,7 +35,7 @@ if (siteFooter) {
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">Woven Nutrition</a>
-          <p>We offer size-inclusive nutrition counseling for individuals seeking to heal their relationships with food and body.</p>
+          <p>We offer in-person nutrition counseling in Seattle, as well as virtual counseling throughout Washington State.</p>
         </div>
         <div class="footer-col">
           <h4>Pages</h4>
