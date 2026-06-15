@@ -1,3 +1,9 @@
+// === CONTACT URL — change here to update all contact links site-wide ===
+const CONTACT_URL = 'https://woven-nutrition.clientsecure.me/contact-widget';
+document.querySelectorAll('[data-contact-link]').forEach(el => {
+  el.href = CONTACT_URL;
+});
+
 // Mobile nav toggle
 const hamburger = document.getElementById('nav-hamburger');
 const navLinks = document.getElementById('nav-links');
