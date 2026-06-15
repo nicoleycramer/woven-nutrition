@@ -274,7 +274,7 @@ section { padding: var(--section-padding); }
   .nav-links.open { display: flex; }
   .nav-links > li { width: 100%; }
   .nav-links > li > a,
-  .nav-links > li > button { width: 100%; padding: 12px 24px; font-size: 0.95rem; }
+  .nav-links > li > button { width: 100%; padding: 12px 24px; font-size: 0.95rem; text-align: left; }
 
   .nav-dropdown {
     position: static;

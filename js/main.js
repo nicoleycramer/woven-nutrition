@@ -1,3 +1,32 @@
+// === HEADER — edit here to update all pages at once ===
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  siteHeader.innerHTML = `
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Woven Nutrition</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-has-dropdown">
+          <button aria-haspopup="true">About &#9662;</button>
+          <ul class="nav-dropdown">
+            <li><a href="about.html">About</a></li>
+            <li><a href="our-philosophy.html">Our Philosophy</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="services-and-rates.html">Services and Rates</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="https://woven-nutrition.clientsecure.me" target="_blank" rel="noopener">Client Portal</a></li>
+        <li class="nav-cta"><a href="#" data-contact-link>Contact</a></li>
+      </ul>
+    </nav>
+  `;
+}
+
 // === FOOTER — edit here to update all pages at once ===
 const siteFooter = document.querySelector('.site-footer');
 if (siteFooter) {
