@@ -17,7 +17,7 @@ if (siteFooter) {
             <li><a href="services-and-rates.html">Services and Rates</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li class="nav-cta"><a href="#" data-contact-link>Contact</a></li>
+            <li class="nav-cta"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
