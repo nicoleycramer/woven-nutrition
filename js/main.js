@@ -1,3 +1,55 @@
+// === FOOTER — edit here to update all pages at once ===
+const siteFooter = document.querySelector('.site-footer');
+if (siteFooter) {
+  siteFooter.innerHTML = `
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Woven Nutrition</a>
+          <p>We offer size-inclusive nutrition counseling for individuals seeking to heal their relationships with food and body.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="our-philosophy.html">Our Philosophy</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="services-and-rates.html">Services and Rates</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="nav-cta"><a href="#" data-contact-link>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>2033 Minor Ave E, #2<br>Seattle, WA 98102</p>
+          <p style="margin-top:0.75rem"><a href="mailto:info@woven-nutrition.com">info@woven-nutrition.com</a></p>
+          <p style="margin-top:0.75rem">
+            <a href="https://www.instagram.com/woven.nutrition" target="_blank" rel="noopener" class="instagram-link" aria-label="Woven Nutrition on Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              <span>@woven.nutrition</span>
+            </a>
+          </p>
+          <p style="margin-top:0.5rem"><a href="https://woven-nutrition.clientsecure.me" target="_blank" rel="noopener">Client Portal</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 by Woven Nutrition, PLLC</p>
+        <div class="footer-legal">
+          <a href="https://docs.google.com/document/d/1AbwneRyCwDxxq78TiFflVMPt1zMN9DfYrLROVnLOHkI/edit?tab=t.0">Website Disclaimer</a>
+          <a href="https://docs.google.com/document/d/1f4zEAQ9pcOfoDMEiSQzqb-ne_F5TWjEHEtUJicaVorA/edit?tab=t.0">Website Privacy Policy</a>
+          <a href="https://docs.google.com/document/d/1RFdCCmVTp_0HcXCPPQ4llJw_L-SSNfe0TgRqB7XxjVY/edit?tab=t.0">HIPAA Notice of Privacy Practices</a>
+          <a href="https://docs.google.com/document/d/1T_yzaU8aV_46DBdEdOQLGEtMWRDNaijQikCXw0_1Atk/edit?tab=t.0">No Surprises Act and Good Faith Estimate</a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 // === CONTACT URL — change here to update all contact links site-wide ===
 const CONTACT_URL = 'https://woven-nutrition.clientsecure.me/contact-widget';
 document.querySelectorAll('[data-contact-link]').forEach(el => {
