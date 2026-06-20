@@ -21,7 +21,7 @@ if (siteHeader) {
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="https://woven-nutrition.clientsecure.me" target="_blank" rel="noopener">Client Portal</a></li>
-        <li class="nav-cta"><a href="#" data-contact-link>Contact</a></li>
+        <li class="nav-cta"><a href="#" target="_blank" data-contact-link>Contact</a></li>
       </ul>
     </nav>
   `;
