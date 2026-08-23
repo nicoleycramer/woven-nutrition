@@ -121,6 +121,53 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
+// Testimonials carousel
+const testimonialsTrack = document.querySelector('.testimonials-track');
+if (testimonialsTrack) {
+  const slides = Array.from(testimonialsTrack.querySelectorAll('.testimonial-slide'));
+  const dotsWrap = document.querySelector('.carousel-dots');
+  const prevBtn = document.querySelector('.carousel-arrow-prev');
+  const nextBtn = document.querySelector('.carousel-arrow-next');
+  let current = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot';
+    dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    testimonialsTrack.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+  }
+
+  const AUTO_ADVANCE_MS = 5000;
+  const carousel = document.querySelector('.testimonials-carousel');
+  let autoAdvance;
+
+  function startAutoAdvance() {
+    autoAdvance = setInterval(() => goTo(current + 1), AUTO_ADVANCE_MS);
+  }
+  function restartAutoAdvance() {
+    clearInterval(autoAdvance);
+    startAutoAdvance();
+  }
+
+  prevBtn.addEventListener('click', () => { goTo(current - 1); restartAutoAdvance(); });
+  nextBtn.addEventListener('click', () => { goTo(current + 1); restartAutoAdvance(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => restartAutoAdvance()));
+
+  carousel.addEventListener('mouseenter', () => clearInterval(autoAdvance));
+  carousel.addEventListener('mouseleave', startAutoAdvance);
+
+  goTo(0);
+  startAutoAdvance();
+}
+
 // Mark active nav link
 const path = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(link => {
