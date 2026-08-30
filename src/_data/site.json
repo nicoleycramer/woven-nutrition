@@ -1,0 +1,18 @@
+{
+  "name": "Woven Nutrition",
+  "portalUrl": "https://woven-nutrition.clientsecure.me",
+  "contactUrl": "https://woven-nutrition.clientsecure.me/contact-widget",
+  "address": {
+    "line1": "5413 Meridian Ave N, Suite A",
+    "line2": "Seattle, WA 98103"
+  },
+  "email": "info@woven-nutrition.com",
+  "instagram": "https://www.instagram.com/woven.nutrition",
+  "instagramHandle": "@woven.nutrition",
+  "legalLinks": [
+    { "text": "Website Disclaimer", "href": "https://docs.google.com/document/d/1AbwneRyCwDxxq78TiFflVMPt1zMN9DfYrLROVnLOHkI/edit?tab=t.0" },
+    { "text": "Website Privacy Policy", "href": "https://docs.google.com/document/d/1f4zEAQ9pcOfoDMEiSQzqb-ne_F5TWjEHEtUJicaVorA/edit?tab=t.0" },
+    { "text": "HIPAA Notice of Privacy Practices", "href": "https://docs.google.com/document/d/1RFdCCmVTp_0HcXCPPQ4llJw_L-SSNfe0TgRqB7XxjVY/edit?tab=t.0" },
+    { "text": "No Surprises Act and Good Faith Estimate", "href": "https://docs.google.com/document/d/1T_yzaU8aV_46DBdEdOQLGEtMWRDNaijQikCXw0_1Atk/edit?tab=t.0" }
+  ]
+}

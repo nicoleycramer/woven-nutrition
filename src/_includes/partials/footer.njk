@@ -1,0 +1,42 @@
+<div class="footer-inner">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="nav-logo">Woven Nutrition</a>
+      <p>We offer in-person nutrition counseling in Seattle, as well as virtual counseling throughout Washington State.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/our-philosophy/">Our Philosophy</a></li>
+        <li><a href="/our-team/">Our Team</a></li>
+        <li><a href="/services-and-rates/">Services and Rates</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li class="nav-cta"><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>{{ site.address.line1 }}<br>{{ site.address.line2 }}</p>
+      <p style="margin-top:0.75rem"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p style="margin-top:0.75rem">
+        <a href="{{ site.instagram }}" target="_blank" rel="noopener" class="instagram-link" aria-label="Woven Nutrition on Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>{{ site.instagramHandle }}</span>
+        </a>
+      </p>
+      <p style="margin-top:0.5rem"><a href="{{ site.portalUrl }}" target="_blank" rel="noopener">Client Portal</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {{ currentYear }} by Woven Nutrition, PLLC</p>
+    <div class="footer-legal">
+      {% for link in site.legalLinks %}<a href="{{ link.href }}">{{ link.text }}</a>{% endfor %}
+    </div>
+  </div>
+</div>

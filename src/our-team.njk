@@ -1,0 +1,39 @@
+---
+title: Our Team | Woven Nutrition
+description: Meet Nicole Cramer and Dani Ladyka — registered dietitians and co-owners of Woven Nutrition in Seattle, WA.
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import ctaBand %}
+    <div class="page-hero">
+      <h1>Meet Our Team</h1>
+    </div>
+
+    <section class="team-section">
+      <div class="container">
+        <div class="team-grid">
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="/images/dani-headshot.jpg" alt="Dani Ladyka">
+            </div>
+            <h3>Dani Ladyka</h3>
+            <p class="pronouns">she/her</p>
+            <p class="role">Registered Dietitian, Co-Owner</p>
+            <a href="/our-team/dani/" class="btn btn-outline">About Dani</a>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="/images/nicole-headshot.jpg" alt="Nicole Cramer">
+            </div>
+            <h3>Nicole Cramer</h3>
+            <p class="pronouns">she/her</p>
+            <p class="role">Registered Dietitian, Co-Owner</p>
+            <a href="/our-team/nicole/" class="btn btn-outline">About Nicole</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+{{ ctaBand() }}

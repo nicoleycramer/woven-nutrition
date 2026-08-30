@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Nicole | Woven Nutrition</title>
-  <meta name="description" content="Nicole Cramer, MPH, RD, CD — Registered Dietitian and co-owner of Woven Nutrition, specializing in eating disorder treatment and sports nutrition.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <header class="site-header">
-  </header>
-
-  <main>
-
+---
+title: Meet Nicole | Woven Nutrition
+description: Nicole Cramer, MPH, RD, CD — Registered Dietitian and co-owner of Woven Nutrition, specializing in eating disorder treatment and sports nutrition.
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import ctaBand %}
     <div class="page-hero">
       <h1>Meet Nicole</h1>
     </div>
@@ -27,7 +14,7 @@
 
           <div class="bio-sidebar">
             <div class="bio-avatar">
-              <img src="images/nicole-headshot.jpg" alt="Nicole Cramer">
+              <img src="/images/nicole-headshot.jpg" alt="Nicole Cramer">
             </div>
             <ul class="bio-credentials">
               <li>Registered Dietitian (#86154814)</li>
@@ -52,10 +39,10 @@
             <p>In her spare time, Nicole enjoys spending quality time with friends, family, and her dog Kiki, as well as playing ultimate frisbee or cycling, watching TV or sports, and playing board games or D&amp;D.</p>
 
             <div style="margin-top:2rem;">
-              <a href="our-team.html" class="btn btn-outline">Back to Team</a>
+              <a href="/our-team/" class="btn btn-outline">Back to Team</a>
             </div>
             <div class="bio-lifestyle">
-              <img src="images/nicole-lifestyle.jpg" alt="Nicole with her dog Kiki">
+              <img src="/images/nicole-lifestyle.jpg" alt="Nicole with her dog Kiki">
             </div>
           </div>
 
@@ -63,17 +50,4 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container">
-        <p style="font-size:1.2rem; opacity:0.95; margin-bottom:1.5rem;">Contact us today to schedule a FREE introductory call.</p>
-        <a href="#" data-contact-link class="btn btn-white">Contact Us</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer"></footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+{{ ctaBand() }}
