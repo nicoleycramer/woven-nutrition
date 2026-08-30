@@ -145,7 +145,7 @@ if (testimonialsTrack) {
     dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
   }
 
-  const AUTO_ADVANCE_MS = 5000;
+  const AUTO_ADVANCE_MS = 12000;
   const carousel = document.querySelector('.testimonials-carousel');
   let autoAdvance;
 
