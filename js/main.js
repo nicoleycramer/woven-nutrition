@@ -51,7 +51,7 @@ if (siteFooter) {
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>2033 Minor Ave E, #2<br>Seattle, WA 98102</p>
+          <p>5413 Meridian Ave N, Suite A<br>Seattle, WA 98103</p>
           <p style="margin-top:0.75rem"><a href="mailto:info@woven-nutrition.com">info@woven-nutrition.com</a></p>
           <p style="margin-top:0.75rem">
             <a href="https://www.instagram.com/woven.nutrition" target="_blank" rel="noopener" class="instagram-link" aria-label="Woven Nutrition on Instagram">
