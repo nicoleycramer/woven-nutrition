@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("currentYear", () => new Date().getFullYear());
 
   eleventyConfig.addCollection("posts", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/blog/*.njk").sort((a, b) => b.date - a.date);
+    return collectionApi.getFilteredByGlob("src/blog/*.md").sort((a, b) => b.date - a.date);
   });
 
   return {
