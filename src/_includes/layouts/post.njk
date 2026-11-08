@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import ctaBand %}
+    <div class="page-hero">
+      <h1>{{ title }}</h1>
+    </div>
+
+    <section class="post-section">
+      <div class="container">
+        <a href="/blog/" class="post-back">← Back to Blog</a>
+        <div class="post-meta-bar">
+          {% if category %}<span class="post-category">{{ category }}</span>{% endif %}
+          <span class="post-date">{{ date | readableDate }}</span>
+          <span class="post-read-time">· {{ readTime }}</span>
+        </div>
+        <div class="post-content">
+{{ content | safe }}
+        </div>
+      </div>
+    </section>
+
+{{ ctaBand() }}

@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Dani | Woven Nutrition</title>
-  <meta name="description" content="Dani Ladyka, MS, RDN, CD — Registered Dietitian and co-owner of Woven Nutrition, specializing in eating disorder treatment and disordered eating recovery.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <header class="site-header">
-  </header>
-
-  <main>
-
+---
+title: Meet Dani | Woven Nutrition
+description: Dani Ladyka, MS, RDN, CD — Registered Dietitian and co-owner of Woven Nutrition, specializing in eating disorder treatment and disordered eating recovery.
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import ctaBand %}
     <div class="page-hero">
       <h1>Meet Dani</h1>
     </div>
@@ -27,7 +14,7 @@
 
           <div class="bio-sidebar">
             <div class="bio-avatar">
-              <img src="images/dani-headshot.jpg" alt="Dani Ladyka">
+              <img src="/images/dani-headshot.jpg" alt="Dani Ladyka">
             </div>
             <ul class="bio-credentials">
               <li>Registered Dietitian (86095269)</li>
@@ -57,10 +44,10 @@
             <p>When not working, you can find Dani reading fantasy books, playing video and board games, going on neighborhood walks, hiking, and teaching indoor cycling classes.</p>
 
             <div style="margin-top:2rem;">
-              <a href="our-team.html" class="btn btn-outline">Back to Team</a>
+              <a href="/our-team/" class="btn btn-outline">Back to Team</a>
             </div>
             <div class="bio-lifestyle">
-              <img src="images/dani-lifestyle.jpg" alt="Dani hiking in the mountains">
+              <img src="/images/dani-lifestyle.jpg" alt="Dani hiking in the mountains">
             </div>
           </div>
 
@@ -68,17 +55,4 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container">
-        <p style="font-size:1.2rem; opacity:0.95; margin-bottom:1.5rem;">Contact us today to schedule a FREE introductory call.</p>
-        <a href="#" data-contact-link class="btn btn-white">Contact Us</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer"></footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+{{ ctaBand() }}

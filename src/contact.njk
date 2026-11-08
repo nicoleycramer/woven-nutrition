@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Woven Nutrition</title>
-  <meta name="description" content="Contact Woven Nutrition to schedule your free introductory call. In-person in Seattle and virtual throughout Washington State.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <header class="site-header">
-  </header>
-
-  <main>
-
+---
+title: Contact | Woven Nutrition
+description: Contact Woven Nutrition to schedule your free introductory call. In-person in Seattle and virtual throughout Washington State.
+layout: layouts/base.njk
+---
     <div class="page-hero">
       <h1>Contact Us</h1>
     </div>
@@ -31,7 +17,7 @@
             <div class="scheduling-box">
               <p>If you select a Monday, Wednesday, or Friday appointment time, you will be connected with Nicole.</p>
               <p>If you select a Tuesday or Thursday appointment time, you will be connected with Anna. If you are contacting us through Prime Sports Institute, we advise that you select a Tuesday or Thursday appointment time if possible.</p>
-              <p>If you have any difficulty scheduling through Calendly or would like to contact us directly, please reach out to <a href="mailto:info@woven-nutrition.com">info@woven-nutrition.com</a>.</p>
+              <p>If you have any difficulty scheduling through Calendly or would like to contact us directly, please reach out to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
             </div>
 
             <div style="margin-top:2rem;">
@@ -39,14 +25,14 @@
                 <div class="contact-icon">📍</div>
                 <div class="contact-detail-text">
                   <strong>Address</strong>
-                  2033 Minor Ave E, #2<br>Seattle, WA 98102
+                  {{ site.address.line1 }}<br>{{ site.address.line2 }}
                 </div>
               </div>
               <div class="contact-detail">
                 <div class="contact-icon">✉️</div>
                 <div class="contact-detail-text">
                   <strong>Email</strong>
-                  <a href="mailto:info@woven-nutrition.com">info@woven-nutrition.com</a>
+                  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </div>
               </div>
               <div class="contact-detail">
@@ -63,24 +49,16 @@
             <div class="contact-cta">
               <h3>Schedule Your Introductory Call</h3>
               <p>Book your free 15-minute introductory call through our scheduling portal.</p>
-              <a href="https://woven-nutrition.clientsecure.me" target="_blank" rel="noopener" class="btn btn-white">Book Now</a>
+              <a href="{{ site.portalUrl }}" target="_blank" rel="noopener" class="btn btn-white">Book Now</a>
             </div>
 
             <div style="background:var(--cream); border-radius:8px; padding:28px; margin-top:24px;">
               <h3 style="font-size:1.1rem; margin-bottom:0.75rem;">Existing Clients</h3>
               <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:1rem;">Access your secure client portal to manage appointments and connect with your dietitian.</p>
-              <a href="https://woven-nutrition.clientsecure.me" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.82rem; padding:11px 22px;">Client Portal</a>
+              <a href="{{ site.portalUrl }}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.82rem; padding:11px 22px;">Client Portal</a>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-
-  </main>
-
-  <footer class="site-footer"></footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>

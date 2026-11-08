@@ -1,0 +1,105 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# Redirect the old flat .html URLs to their new clean-URL equivalents so
+# existing links/bookmarks/search rankings keep working after the Eleventy migration.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/our-philosophy.html"
+  to = "/our-philosophy/"
+  status = 301
+
+[[redirects]]
+  from = "/our-team.html"
+  to = "/our-team/"
+  status = 301
+
+[[redirects]]
+  from = "/dani.html"
+  to = "/our-team/dani/"
+  status = 301
+
+[[redirects]]
+  from = "/nicole.html"
+  to = "/our-team/nicole/"
+  status = 301
+
+[[redirects]]
+  from = "/services-and-rates.html"
+  to = "/services-and-rates/"
+  status = 301
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/faq/"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/post-welcome.html"
+  to = "/blog/welcome/"
+  status = 301
+
+[[redirects]]
+  from = "/post-cycling-nutrition.html"
+  to = "/blog/cycling-nutrition/"
+  status = 301
+
+[[redirects]]
+  from = "/post-starting-solids.html"
+  to = "/blog/starting-solids/"
+  status = 301
+
+[[redirects]]
+  from = "/post-intuitive-eating-athletes.html"
+  to = "/blog/intuitive-eating-athletes/"
+  status = 301
+
+[[redirects]]
+  from = "/post-honoring-hunger.html"
+  to = "/blog/honoring-hunger/"
+  status = 301
+
+[[redirects]]
+  from = "/post-orthorexia.html"
+  to = "/blog/orthorexia/"
+  status = 301
+
+[[redirects]]
+  from = "/post-disordered-eating.html"
+  to = "/blog/disordered-eating/"
+  status = 301
+
+[[redirects]]
+  from = "/post-body-image.html"
+  to = "/blog/body-image/"
+  status = 301
+
+[[redirects]]
+  from = "/post-intuitive-movement.html"
+  to = "/blog/intuitive-movement/"
+  status = 301
+
+[[redirects]]
+  from = "/post-intuitive-eating-attunement.html"
+  to = "/blog/intuitive-eating-attunement/"
+  status = 301

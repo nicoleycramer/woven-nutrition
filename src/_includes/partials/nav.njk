@@ -1,0 +1,23 @@
+<nav class="nav-inner" aria-label="Main navigation">
+  <a href="/" class="nav-logo">Woven Nutrition</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
+    <li class="nav-has-dropdown">
+      <button aria-haspopup="true">About &#9662;</button>
+      <ul class="nav-dropdown">
+        <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
+        <li><a href="/our-philosophy/"{% if page.url == "/our-philosophy/" %} class="active"{% endif %}>Our Philosophy</a></li>
+        <li><a href="/our-team/"{% if page.url.startsWith("/our-team/") %} class="active"{% endif %}>Our Team</a></li>
+      </ul>
+    </li>
+    <li><a href="/services-and-rates/"{% if page.url == "/services-and-rates/" %} class="active"{% endif %}>Services and Rates</a></li>
+    <li><a href="/faq/"{% if page.url == "/faq/" %} class="active"{% endif %}>FAQ</a></li>
+    <li><a href="/blog/"{% if page.url.startsWith("/blog/") %} class="active"{% endif %}>Blog</a></li>
+    <li><a href="/resources/"{% if page.url == "/resources/" %} class="active"{% endif %}>Resources</a></li>
+    <li><a href="{{ site.portalUrl }}" target="_blank" rel="noopener">Client Portal</a></li>
+    <li class="nav-cta"><a href="#" target="_blank" data-contact-link>Contact</a></li>
+  </ul>
+</nav>

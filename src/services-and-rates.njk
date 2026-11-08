@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services and Rates | Woven Nutrition</title>
-  <meta name="description" content="Woven Nutrition offers individualized nutrition counseling for adults 18+. View our services, session rates, and insurance information.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <header class="site-header">
-  </header>
-
-  <main>
-
+---
+title: Services and Rates | Woven Nutrition
+description: Woven Nutrition offers individualized nutrition counseling for adults 18+. View our services, session rates, and insurance information.
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import ctaBand %}
     <div class="page-hero">
       <h1>Services and Rates</h1>
     </div>
@@ -81,7 +68,7 @@
           <p style="color:var(--text-light); font-size:0.95rem; margin-top:1.5rem;">We invite you to reflect on your current access to resources and choose the rate that feels most aligned and sustainable. We trust you to select a rate that honestly reflects your present circumstances and to revisit your choice as your financial situation changes over time.</p>
         <p style="color:var(--text-light); font-size:0.95rem; margin-top:1rem;">We ask that reduced-rate options be used based on current financial need, rather than preference or concern about future scarcity. If you have access to financial support (such as family or community resources) that would allow you to pay at a higher tier, we encourage you to consider utilizing those options so that lower rates remain available for those who need them most.</p>
 
-        <img src="images/green-bottle-sliding-scale.png" alt="Green Bottle Method sliding scale illustration" style="width:100%; max-width:600px; display:block; margin:1.75rem auto; border-radius:8px;">
+        <img src="/images/green-bottle-sliding-scale.png" alt="Green Bottle Method sliding scale illustration" style="width:100%; max-width:600px; display:block; margin:1.75rem auto; border-radius:8px;">
 
         <div class="rate-tiers">
           <div class="rate-tier">
@@ -102,7 +89,7 @@
           </div>
         </div>
 
-        <p style="color:var(--text-light); font-size:0.95rem; margin-top:1rem;">If you are feeling stuck about where you may fall on the scale, please do not hesitate to reach out to <a href="mailto:info@woven-nutrition.com">info@woven-nutrition.com</a>.</p>
+        <p style="color:var(--text-light); font-size:0.95rem; margin-top:1rem;">If you are feeling stuck about where you may fall on the scale, please do not hesitate to reach out to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
         </div>
       </div>
     </section>
@@ -121,17 +108,4 @@
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container">
-        <p style="font-size:1.2rem; opacity:0.95; margin-bottom:1.5rem;">Contact us today to schedule a FREE introductory call.</p>
-        <a href="#" data-contact-link class="btn btn-white">Contact Us</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer"></footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+{{ ctaBand() }}

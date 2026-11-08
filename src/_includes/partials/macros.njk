@@ -1,0 +1,8 @@
+{% macro ctaBand(text="Contact us today to schedule a FREE introductory call.", target=none) %}
+<section class="cta-band">
+  <div class="container">
+    {% if text %}<p style="font-size:1.2rem; opacity:0.95; margin-bottom:1.5rem;">{{ text }}</p>{% endif %}
+    <a href="#" data-contact-link{% if target %} target="{{ target }}"{% endif %} class="btn btn-white">Contact Us</a>
+  </div>
+</section>
+{% endmacro %}

@@ -1,0 +1,26 @@
+---
+title: Blog | Woven Nutrition
+description: Articles on intuitive eating, body image, movement, eating disorders, and more from the dietitians at Woven Nutrition.
+layout: layouts/base.njk
+---
+    <div class="page-hero">
+      <h1>Blog</h1>
+    </div>
+
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-grid">
+{% for post in collections.posts %}
+          <div class="post-card">
+            <div class="post-card-meta">
+              {% if post.data.category %}<span class="post-category">{{ post.data.category }}</span>{% endif %}
+              <span class="post-date">{{ post.data.date | readableDate }}</span>
+              <span class="post-read-time">· {{ post.data.readTime }}</span>
+            </div>
+            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <a href="{{ post.url }}" class="read-more">Read more →</a>
+          </div>
+{% endfor %}
+        </div>
+      </div>
+    </section>
